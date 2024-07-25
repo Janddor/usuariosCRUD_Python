@@ -1,0 +1,104 @@
+
+03:57:08 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+03:57:08 PM: DEBUG [Conexion.py:26] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001D844E06210>
+03:57:08 PM: DEBUG [Conexion.py:36] Conexión obtenida del pool: <connection object at 0x000001D846979F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:57:08 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método __exit__
+03:57:08 PM: DEBUG [cursor_del_pool.py:21] Commit de la trasacción, se hace commit
+03:57:08 PM: DEBUG [Conexion.py:42] Regresando conexión al pool: <connection object at 0x000001D846979F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:57:08 PM: DEBUG [persona_dao.py:71] 
+            Id Persona: 5, Nombre: Juanita,
+            Apellido: Pino, Email: jpino@mail.com
+        
+03:57:08 PM: DEBUG [persona_dao.py:72] <class 'persona.Persona'>
+03:57:08 PM: DEBUG [persona_dao.py:71] 
+            Id Persona: 9, Nombre: Maria,
+            Apellido: Esparza, Email: mesparza@mail.com
+        
+03:57:08 PM: DEBUG [persona_dao.py:72] <class 'persona.Persona'>
+03:57:08 PM: DEBUG [persona_dao.py:71] 
+            Id Persona: 10, Nombre: Jan,
+            Apellido: Cuarlos, Email: jancuarlos@mail.com
+        
+03:57:08 PM: DEBUG [persona_dao.py:72] <class 'persona.Persona'>
+03:57:08 PM: DEBUG [persona_dao.py:71] 
+            Id Persona: 14, Nombre: pedro,
+            Apellido: Najera, Email: pnajera@mail.com
+        
+03:57:08 PM: DEBUG [persona_dao.py:72] <class 'persona.Persona'>
+03:57:08 PM: DEBUG [persona_dao.py:71] 
+            Id Persona: 15, Nombre: Alejandra,
+            Apellido: Tellez, Email: atellez@mail.com
+        
+03:57:08 PM: DEBUG [persona_dao.py:72] <class 'persona.Persona'>
+02:09:24 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+02:09:24 PM: DEBUG [Conexion.py:26] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000018188F0A030>
+02:09:24 PM: DEBUG [Conexion.py:36] Conexión obtenida del pool: <connection object at 0x000001818AB35F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:09:24 PM: DEBUG [usuario_dao.py:19] Seleccionando usuarios
+02:09:24 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método __exit__
+02:09:24 PM: DEBUG [cursor_del_pool.py:21] Commit de la trasacción, se hace commit
+02:09:24 PM: DEBUG [Conexion.py:42] Regresando conexión al pool: <connection object at 0x000001818AB35F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:09:24 PM: INFO [menu_app_usuario.py:16] [<usuario.Usuario object at 0x000001818AB48E30>, <usuario.Usuario object at 0x000001818AB49130>]
+02:09:24 PM: INFO [menu_app_usuario.py:16] [<usuario.Usuario object at 0x000001818AB48E30>, <usuario.Usuario object at 0x000001818AB49130>]
+02:11:03 PM: INFO [menu_app_usuario.py:16] [<usuario.Usuario object at 0x000001EABB29D610>, <usuario.Usuario object at 0x000001EABB29D640>]
+02:11:03 PM: INFO [menu_app_usuario.py:16] [<usuario.Usuario object at 0x000001EABB29D610>, <usuario.Usuario object at 0x000001EABB29D640>]
+02:12:01 PM: INFO [cursor_del_pool.py:27] Dentro del bloque with
+02:12:01 PM: INFO [cursor_del_pool.py:29] [(1, 'jperez', '123'), (2, 'kgomez', '456')]
+02:15:52 PM: INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+02:15:52 PM: INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+02:16:10 PM: INFO [menu_app_usuario.py:18] Salimos de la aplicación
+02:24:27 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:24:27 PM: INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+02:24:45 PM: ERROR [cursor_del_pool.py:18] Ocurrió una excepción, se hace rollback: null value in column "username" of relation "usuario" violates not-null constraint
+DETAIL:  Failing row contains (1, null, null).
+ <class 'psycopg2.errors.NotNullViolation'> <traceback object at 0x000001BA997EFDC0>
+02:26:41 PM: ERROR [cursor_del_pool.py:18] Ocurrió una excepción, se hace rollback: null value in column "username" of relation "usuario" violates not-null constraint
+DETAIL:  Failing row contains (2, null, null).
+ <class 'psycopg2.errors.NotNullViolation'> <traceback object at 0x0000022F6DB8FDC0>
+02:28:24 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+02:28:25 PM: DEBUG [Conexion.py:26] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000018598867A40>
+02:28:25 PM: DEBUG [Conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000018598BBA130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:28:25 PM: DEBUG [usuario_dao.py:31] Usuario a insertar: Usuario: None MLARA 789
+02:28:25 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método __exit__
+02:28:25 PM: ERROR [cursor_del_pool.py:18] Ocurrió una excepción, se hace rollback: null value in column "username" of relation "usuario" violates not-null constraint
+DETAIL:  Failing row contains (3, null, null).
+ <class 'psycopg2.errors.NotNullViolation'> <traceback object at 0x0000018596FFFDC0>
+02:28:25 PM: DEBUG [Conexion.py:42] Regresando conexión al pool: <connection object at 0x0000018598BBA130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:29:57 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+02:29:57 PM: DEBUG [Conexion.py:26] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000019A7FF3DE50>
+02:29:57 PM: DEBUG [Conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000019A7FF36130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:29:57 PM: DEBUG [usuario_dao.py:31] Usuario a insertar: Usuario: None mlara 789
+02:29:57 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método __exit__
+02:29:57 PM: DEBUG [cursor_del_pool.py:21] Commit de la trasacción, se hace commit
+02:29:57 PM: DEBUG [Conexion.py:42] Regresando conexión al pool: <connection object at 0x0000019A7FF36130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:29:57 PM: INFO [menu_app_usuario.py:24] Usuarios insertados: 1
+02:30:02 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+02:30:02 PM: DEBUG [Conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000019A7FF36130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:30:02 PM: DEBUG [usuario_dao.py:19] Seleccionando usuarios
+02:30:02 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método __exit__
+02:30:02 PM: DEBUG [cursor_del_pool.py:21] Commit de la trasacción, se hace commit
+02:30:02 PM: DEBUG [Conexion.py:42] Regresando conexión al pool: <connection object at 0x0000019A7FF36130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+02:30:02 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:30:02 PM: INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+02:30:02 PM: INFO [menu_app_usuario.py:17] Usuario: 4 mlara 789
+02:30:27 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:30:27 PM: INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+02:30:27 PM: INFO [menu_app_usuario.py:17] Usuario: 4 mlara 789
+02:30:38 PM: INFO [menu_app_usuario.py:38] usuarios eliminados: 0
+02:32:12 PM: INFO [menu_app_usuario.py:32] Usuarios actualizados: 0
+02:32:14 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:32:14 PM: INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+02:32:14 PM: INFO [menu_app_usuario.py:17] Usuario: 4 mlara 789
+02:35:09 PM: INFO [menu_app_usuario.py:32] Usuarios actualizados: 1
+02:35:35 PM: INFO [menu_app_usuario.py:32] Usuarios actualizados: 0
+02:35:37 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:35:37 PM: INFO [menu_app_usuario.py:17] Usuario: 2 komez 1212
+02:35:37 PM: INFO [menu_app_usuario.py:17] Usuario: 4 mlara 789
+02:35:53 PM: INFO [menu_app_usuario.py:32] Usuarios actualizados: 1
+02:35:55 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:35:55 PM: INFO [menu_app_usuario.py:17] Usuario: 2 komed 121
+02:35:55 PM: INFO [menu_app_usuario.py:17] Usuario: 4 mlara 789
+02:36:03 PM: INFO [menu_app_usuario.py:24] Usuarios insertados: 1
+02:36:04 PM: INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+02:36:04 PM: INFO [menu_app_usuario.py:17] Usuario: 2 komed 121
+02:36:04 PM: INFO [menu_app_usuario.py:17] Usuario: 4 mlara 789
+02:36:04 PM: INFO [menu_app_usuario.py:17] Usuario: 5 aaaa 3333
